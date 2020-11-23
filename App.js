@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import React, {useState } from 'react';
+import React, {useState} from 'react';
 import { StyleSheet, Text, View, TextInput, SafeAreaView } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -42,10 +42,9 @@ export default function App() {
 
   const [name, setName] = useState('Name');
   
-  
-  
   return (
     <SafeAreaView>
+    <StatusBar barStyle='dark' ></StatusBar>
     <View style={styles.container}>
      <StatusBar style="dark" />
     <Text style={styles.textHeader}>CollectWords</Text>
